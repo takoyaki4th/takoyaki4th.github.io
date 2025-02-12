@@ -10,6 +10,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master  
 
+      - name: cd frontend
+        run: cd packages/frontend/
+
       - name: Install Dependencies
         run: npm install
 
