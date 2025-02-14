@@ -11,8 +11,11 @@ jobs:
         uses: actions/checkout@master  
 
       - name: cd frontend
-        run: cd packages/frontend/
+        run: cd ./packages/frontend/
 
+      - name: ls
+        run: ls
+        
       - name: Install Dependencies
         run: npm install
 
